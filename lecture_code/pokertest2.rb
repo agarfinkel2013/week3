@@ -1,5 +1,4 @@
 
-
 c = [ ]
 while c.length < 5
   v = rand(52) + 1
@@ -24,3 +23,4 @@ end
 
 #<img src = "assets/queen_of_hearts.png">
 #<img src = <% "assets/#{c}.png" %>>    ??
+hgf
