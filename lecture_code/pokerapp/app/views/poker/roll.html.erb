@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mandy's Poker Page</title>
+    </head>
+
+    <body style="zoom: 1;">
+    <div class ="container">
+    <div id="poker">
+     <div class ="row">
+          <div class="span12 page-header">
+          <h1>Poker Cards </h1>
+          <p>
+              <a href ="javascript:location.reload(true);">Refresh this page to deal a new hand.</a>
+          </p>
+     <div class="row">
+          <div class= "span12 hand">
+          <% @cards.each do |v| %>
+              <img style = "padding: 10px 10px 10px 10px;"
+                        alt = <%= "#{v.full_card}" %>
+                        src = <%= "assets/#{v.pic_card}" %>
+                        height=300>
+          <% end %>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </body>
+</html>
